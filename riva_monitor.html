@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riva Monitor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 100vh; /* Full viewport height */
+        }
+        .iframe-container {
+            width: 440px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <iframe class="iframe-container" src="https://thingspeak.mathworks.com/channels/2605389/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line" frameborder="0"></iframe>
+        <iframe class="iframe-container" src="https://thingspeak.mathworks.com/channels/2605389/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=50&type=line" frameborder="0"></iframe>
+    </div>
+
+</body>
+</html>
